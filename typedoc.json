@@ -1,0 +1,17 @@
+{
+  "entryPoints": ["./src/index.ts"],
+  "out": "./docs",
+  "disableSources": true,
+  "plugin": ["./dist/index.js", "typedoc-plugin-replace-text"],
+  "githubWidgetUrl": "https://github.com/mrfigg/typedoc-plugin-github-widget",
+  "githubWidgetTarget": "_blank",
+  "replaceText": {
+    "replacements": [
+      {
+        "pattern": "#+ Example(?:(?!^#).)*",
+        "flags": "gmis",
+        "replace": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "typedoc-plugin-github-widget",
+  "version": "1.0.0",
+  "description": "A plugin for TypeDoc that adds a Github widget to the header",
+  "author": "MrFigg",
+  "license": "MIT",
+  "homepage": "https://github.com/mrfigg/typedoc-plugin-github-widget#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrfigg/typedoc-plugin-github-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrfigg/typedoc-plugin-github-widget/issues"
+  },
+  "keywords": [
+    "typedoc",
+    "plugin",
+    "typedoc-plugin",
+    "typedocplugin",
+    "github",
+    "widget"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "docs": "rimraf docs && typedoc"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "peerDependencies": {
+    "typedoc": "^0.26.8",
+    "@mrfigg/typedoc-plugin-lib-utils": "^1.2.0"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/commondir": "^1.0.2",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.7.4",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "prettier": "3.3.3",
+    "rimraf": "^6.0.1",
+    "typedoc-plugin-replace-text": "^4.0.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
+  }
+}
